@@ -1,0 +1,420 @@
+span {
+    color: #FF4500;
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .orange:hover{
+    color: #FF4500;
+}
+
+  /* Search Bar Styling */
+  .search-bar-container {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 250px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-bar-container.show {
+    display: block;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  /* hero section  ............................................................... */
+  .hero-section {
+    background: url('/hero-section/hero3.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  /* product showcase............................................................ */
+
+  /* General Card Styling */
+.card {
+  overflow: hidden; /* Prevents image overflow */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-5px); /* Lifts card slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+}
+
+/* Image Hover Effect */
+.tr-img {
+  transition: transform 0.4s ease-in-out; /* Smooth transition */
+  border-radius: 10px;
+  min-height: 350px;
+ 
+}
+
+.tr-img:hover {
+  transform: scale(1.1); /* Subtle zoom effect */
+}
+
+/* Button Styling */
+/* Styling for Buy Now and Add to Cart buttons */
+.card-body .btn {
+  width: 100px;  /* Ensures consistent button width */
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-body .btn-primary {
+  background-color: #6c5ce7;  /* Elegant purple shade */
+  border: none;
+}
+
+.card-body .btn-primary:hover {
+  background-color: #4b42a8;  /* Darker shade on hover */
+  transform: scale(1.05);
+}
+
+.card-body .btn-outline-secondary {
+  border: 1.5px solid #6c5ce7;
+  color: #6c5ce7;
+}
+
+.card-body .btn-outline-secondary:hover {
+  background-color:   #9afd58 ;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+/* Title & Price Styling */
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.fw-bold {
+  color: #ff4757;
+}
+
+/* Background for Product Section */
+#trending {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 40px 0;
+  border-radius: 15px;
+}
+
+/* Mobile View Enhancements */
+@media (max-width: 768px) { 
+  .tr-img {
+      max-height: 150px;
+      width: 50%;
+      /* object-fit: cover; */
+  }
+
+  .btn {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+
+  .card-body {
+      padding: 15px;
+      margin: 30px;
+  }
+}
+
+  
+
+  /* footer.......................................................................... */
+  .footer {
+    background: #222;  /* Dark aesthetic look */
+    color: white;
+    padding: 40px 0;
+   
+}
+
+.footer h5 {
+    font-weight: bold;
+}
+
+.footer a {
+    transition: 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #f8b400;  /* Warm golden highlight */
+}
+
+.footer form input {
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.footer form button {
+    border-radius: 20px;
+    background: #f8b400;
+    border: none;
+}
+
+.footer .fa-lg {
+    transition: 0.3s ease-in-out;
+}
+
+.footer .fa-lg:hover {
+    transform: scale(1.2);
+    color: #f8b400;
+}
+
+
+/* modal ..............................................................*/
+/* Trending Section Styling */
+#trending {
+  padding: 50px 0;
+  background-color: #f8f9fa; /* Light background */
+  width: 100%;
+}
+
+.trending-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.trending-heading::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #007bff; /* Blue underline */
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Product Card */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  background: #fff;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.card .tr-img {
+  max-height: 220px;
+  width: auto;
+  object-fit: cover;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .tr-img {
+  transform: scale(1.05);
+}
+
+/* Card Body */
+.card-body {
+  padding: 15px;
+  
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 15px;
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 6px 12px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+  padding: 6px 12px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .trending-heading {
+      font-size: 24px;
+  }
+
+  .card-title {
+      font-size: 14px;
+  }
+
+  .price {
+    font-size: 16px; /* Increase font size for better readability */
+    font-weight: bold; /* Make the price stand out */
+    color: #d9534f; /* Attractive red color */
+    background-color: #fff5f5; /* Light background to highlight */
+    border: 2px solid #d9534f; /* Matching border color */
+    padding: 5px 10px; /* Add some spacing inside */
+    border-radius: 5px; /* Smooth rounded edges */
+    display: inline-block; /* Make it look like a label */
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.price:hover {
+    background-color: #d9534f;
+    color: white;
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+
+  .btn {
+      font-size: 12px;
+      padding: 5px 10px;
+  }
+  .tr-img {
+    max-height: 100px;
+    width: 60%; /* Reduce image height */
+    object-fit: cover; /* Ensures proper scaling */
+}
+
+.btn {
+    padding: 10px 20px; /* Increase button padding */
+    font-size: 16px; /* Slightly larger text */
+}
+}
+
+@media (max-width: 576px) {
+  #trending {
+      padding: 30px 10px;
+  }
+
+  .trending-heading {
+      font-size: 22px;
+  }
+
+  .card {
+      text-align: center;
+  }
+}
+
+  
+
+/* nav bar ...........................................................................*/
+.nav-link {
+  position: relative; /* Needed for the pseudo-element */
+  color: #333; /* Default link color */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.nav-link::after {
+  content: ''; /* Adds a decorative element */
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Increased the gap below the text */
+  width: 0; /* Hidden by default */
+  height: 2px; /* Thickness of the underline */
+  background-color: #ff4500; /* Reddish-orange color */
+  transition: width 0.3s ease; /* Smooth underline animation */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Show underline on hover */
+}
+
+.nav-link.active:link,
+.nav-link.active:visited {
+  color: #ff4500;
+}
+
+
+.nav-link.active::after {
+  width: 0; /* No underline for the active link */
+}
+
+
+/*Price tag  ........................................................................................*/
+.t-n {
+  text-decoration: none; /* Ensure no underlines on links */
+}
+
+.price-tag {
+  font-size: 1.3rem; /* Emphasize the price */
+  font-weight: bold; /* Bold text */
+  color: white; /* White text for contrast */
+  text-align: center; /* Center-align the price */
+  padding: 10px 15px; /* Space around the price */
+  border-radius: 8px; /* Smooth corners for the box */
+  background: linear-gradient(45deg, #ff4500, #ff7e00); /* Gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.price-tag:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.col-6.col-md-3 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center image and price tag */
+  text-align: center; /* Align content within the column */
+}
+
+
